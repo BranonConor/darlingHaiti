@@ -96,22 +96,32 @@ span {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	margin-left: 0;
+	margin-right: 0;
 	padding-top: 50px;
-	height: 800px;
+	height: 900px;
 }
 .lastJumbo {
 	font-size: 60px;
 	color: white;
+	margin-bottom: 30px;
 }
 .containerTwo {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-gap: 20px;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 50px;
 	align-content: center;
 }
-.jumb-three-btn {
+.cont-two-item {
+	background: #8AB0AB;
+	height: 375px;
+	text-align: center;
+	border-radius: 30px;
+}
+.cont-two-item-btn {
 	border: none;
-	background: #1A1B1A;
+	border-radius: 25px;
+	background: #3E505B;
 	padding: 20px;
 	color: white;
 	font-size: 25x;
@@ -121,7 +131,36 @@ span {
 	color: black;
 	margin-bottom: 20px;
 }
+#sponsor {
+	width: 50%;
+	padding-right: 25%;
+	padding-left: 25%;
+}
+#volunteer {
+	width: 50%;
+	padding-right: 25%;
+	padding-left: 25%;
+}
 /* --- Jumbotron Four --- */
 .jumbFour {
 	height: 800px;
+	background: #1A1D1A;
+}
+.containerThree {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 50px;
+	align-content: center;
+	margin-top: 50px;
+}
+.cont-three-item {
+	text-align: center;
+	overflow: hidden;
+}
+#teamPhotos {
+	height: 300px;
+	width: auto;
+}
+h5 {
+	font-size: 40px;
 }
