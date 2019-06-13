@@ -162,5 +162,7 @@ span {
 	width: auto;
 }
 h5 {
-	font-size: 40px;
+	font-size: 30px;
+	margin-bottom: 10px;
+	color: #8AB0AB;
 }
