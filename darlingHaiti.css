@@ -11,6 +11,10 @@ Eerie Black: #1A1D1A
 Pewter Blue: #8AB0AB
 */
 /* --- Navbar --- */
+.navbar {
+	position: sticky;
+	top: 0;
+}
 .nav {
 	list-style: none;
 	color: white;
@@ -18,7 +22,6 @@ Pewter Blue: #8AB0AB
 	margin: 0;
 	padding-top: 15px;
 	padding-bottom: 15px;
-	position: sticky;
 }
 li {
 	display: inline;
@@ -38,7 +41,6 @@ li {
 	color: white;
 	text-align: center;
 	padding: 5px;
-	width: 100%;
 	height: 900px;
 }
 hr {
@@ -92,33 +94,39 @@ span {
 }
 /* --- Jumbotron Three --- */
 .jumbThree {
-	background: url(https://images.unsplash.com/photo-1548102268-3d7dc56b01e1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1900&q=80);
+	background: url(https://images.unsplash.com/photo-1509239767605-0703ef611f08?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	margin-left: 0;
 	margin-right: 0;
 	padding-top: 50px;
-	height: 900px;
-}
-.lastJumbo {
-	font-size: 60px;
-	color: white;
-	margin-bottom: 30px;
+	height: 100%;
 }
 .containerTwo {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr;
 	grid-gap: 50px;
-	align-content: center;
+	height: 100%;
 }
-.cont-two-item {
-	background: #8AB0AB;
+/*** Sponsor item ***/
+.sponsor {
+	background: none;
 	height: 375px;
-	text-align: center;
+	text-align: left;
 	border-radius: 30px;
+	margin-left: 50px;
+	color: white;
+	padding-top: 75px;
+	padding-bottom: 75px;
 }
-.cont-two-item-btn {
+.sponsorTitle {
+	font-size: 40px;
+}
+.sponsorText {
+	width: 30%;
+}
+.sponsor-btn {
 	border: none;
 	border-radius: 25px;
 	background: #3E505B;
@@ -126,40 +134,54 @@ span {
 	color: white;
 	font-size: 25x;
 }
-.lastHr {
-	width: 10%;
-	color: black;
-	margin-bottom: 20px;
+/*** Volunteer item ***/
+.volunteer {
+	background: none;
+	height: 375px;
+	text-align: right;
+	border-radius: 30px;
+	margin-right: 50px;
+	color: white;
+	padding-top: 75px;
+	padding-bottom: 75px;
+	margin-bottom: 100px;
 }
-#sponsor {
-	width: 50%;
-	padding-right: 25%;
-	padding-left: 25%;
+.volunteerTitle {
+	font-size: 40px;
 }
-#volunteer {
-	width: 50%;
-	padding-right: 25%;
-	padding-left: 25%;
+.volunteerText {
+	width: 30%;
+	padding-left: 70%;
 }
-/* --- Jumbotron Four --- */
-.jumbFour {
+.volunteer-btn {
+	border: none;
+	border-radius: 25px;
+	background: #3E505B;
+	padding: 20px;
+	color: white;
+	font-size: 25x;
+}
+/* --- Jumbotron Five --- */
+.jumbFive {
 	height: 800px;
 	background: #1A1D1A;
 }
-.containerThree {
+.containerFour {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 50px;
-	align-content: center;
 	margin-top: 50px;
 }
-.cont-three-item {
+.cont-four-item {
 	text-align: center;
-	overflow: hidden;
 }
-#teamPhotos {
+.teamPhotos {
 	height: 300px;
 	width: auto;
+	border-top-left-radius: 50% 50%;
+  	border-top-right-radius: 50% 50%;
+  	border-bottom-right-radius: 50% 50%;
+  	border-bottom-left-radius: 50% 50%;
 }
 h5 {
 	font-size: 30px;
