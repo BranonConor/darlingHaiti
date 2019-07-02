@@ -2,6 +2,7 @@ body {
 	background: white;
 	margin: 0;
 	font-family: 'Roboto Condensed', sans-serif;
+	width: 100%;
 }
 a {
 	text-decoration: none;
@@ -54,7 +55,8 @@ li {
 	color: white;
 	text-align: center;
 	padding: 5px;
-	height: 900px;
+	width: 100%;
+	height: auto;
 }
 hr {
 	width: 10%;
@@ -76,11 +78,16 @@ h1 {
 	background-repeat: no-repeat;
 	color: #8AB0AB;
 	padding-top: 200px;
+	width: 100%;
+	height: auto;
+	min-height: 800px;
 }
 /* --- Jumbotron Two --- */
 .jumbTwo {
 	background: #3E505B;
 	padding-top: 50px;
+	width: 100%;
+	height: auto;
 }
 h2 {
 	font-size: 40px;
@@ -114,7 +121,8 @@ span {
 	margin-left: 0;
 	margin-right: 0;
 	padding-top: 50px;
-	height: 100%;
+	width: 100%;
+	height: auto;
 }
 .containerTwo {
 	display: grid;
@@ -178,12 +186,16 @@ span {
 .jumbFive {
 	height: 800px;
 	background: #1A1D1A;
+	width: 100%;
+	height: auto;
 }
 .containerFour {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 50px;
 	margin-top: 50px;
+	width: 100%;
+	height: auto;
 }
 .cont-four-item {
 	text-align: center;
@@ -203,4 +215,12 @@ h5 {
 }
 
 /* -- Footer -- */
+.footer {
+	margin: 0 auto;
+	width: 100%;
+	height: auto;
+}
 
+.footerContainer {
+	float: left;
+}
