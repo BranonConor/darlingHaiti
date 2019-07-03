@@ -1,8 +1,15 @@
+html {
+	width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+	scroll-behavior: smooth;
+}
 body {
 	background: white;
 	margin: 0;
 	font-family: 'Roboto Condensed', sans-serif;
-	width: 100%;
 }
 a {
 	text-decoration: none;
@@ -19,6 +26,10 @@ Pewter Blue: #8AB0AB
 .navbar {
 	position: sticky;
 	top: 0;
+	z-index: 1;
+}
+.navScroll {
+	opacity: 0.6;
 }
 .nav {
 	list-style: none;
@@ -70,6 +81,19 @@ h1 {
 	padding-bottom: 10px; 
 	margin-bottom: 0;
 }
+h3 {
+	color: black;
+	font-weight: lighter;
+	font-size: 2rem;
+}
+button:hover {
+	background-color: #8AB0AB;
+	transform: rotate(360deg) scale(1.2);
+	/*transform: rotate(360deg) scale(1);*/
+	transition: 0.4s;
+	color: black;
+	box-shadow: 4px 8px #3E505B;
+}
 /* --- Jumbotron One --- */
 .jumbOne {
 	background: url(https://images.unsplash.com/photo-1500514966906-fe245eea9344?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1867&q=80);
@@ -93,7 +117,7 @@ h2 {
 	font-size: 40px;
 }
 p {
-	font-size: 20px;
+	font-size: 1.5rem;
 }
 span {
 	font-family: 'Great Vibes', cursive;
@@ -114,7 +138,7 @@ span {
 }
 /* --- Jumbotron Three --- */
 .jumbThree {
-	background: url(https://images.unsplash.com/photo-1509239767605-0703ef611f08?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+	background: none;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -123,91 +147,38 @@ span {
 	padding-top: 50px;
 	width: 100%;
 	height: auto;
+	min-height: 500px;
 }
 .containerTwo {
 	display: grid;
-	grid-template-columns: 1fr;
+	grid-template-columns: 1fr 1fr;
 	grid-gap: 50px;
-	height: 100%;
 }
-/*** Sponsor item ***/
-.sponsor {
+.getInvolved {
 	background: none;
-	height: 375px;
-	text-align: left;
-	border-radius: 30px;
-	margin-left: 50px;
-	color: white;
-	padding-top: 75px;
-	padding-bottom: 75px;
-}
-.sponsorTitle {
-	font-size: 40px;
-}
-.sponsorText {
-	width: 30%;
-}
-.sponsor-btn {
-	border: none;
-	border-radius: 25px;
-	background: #3E505B;
-	padding: 20px;
-	color: white;
-	font-size: 25x;
-}
-/*** Volunteer item ***/
-.volunteer {
-	background: none;
-	height: 375px;
-	text-align: right;
-	border-radius: 30px;
-	margin-right: 50px;
-	color: white;
-	padding-top: 75px;
-	padding-bottom: 75px;
-	margin-bottom: 100px;
-}
-.volunteerTitle {
-	font-size: 40px;
-}
-.volunteerText {
-	width: 30%;
-	padding-left: 70%;
-}
-.volunteer-btn {
-	border: none;
-	border-radius: 25px;
-	background: #3E505B;
-	padding: 20px;
-	color: white;
-	font-size: 25x;
-}
-/* --- Jumbotron Five --- */
-.jumbFive {
-	height: 800px;
-	background: #1A1D1A;
-	width: 100%;
+	width: 50%;
 	height: auto;
-}
-.containerFour {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-gap: 50px;
-	margin-top: 50px;
-	width: 100%;
-	height: auto;
-}
-.cont-four-item {
 	text-align: center;
+	border-radius: 30px;
+	margin: auto;
+	padding-top: 75px;
+	padding-bottom: 75px;
 }
-.teamPhotos {
-	height: 300px;
-	width: auto;
-	border-top-left-radius: 50% 50%;
-  	border-top-right-radius: 50% 50%;
-  	border-bottom-right-radius: 50% 50%;
-  	border-bottom-left-radius: 50% 50%;
+.sponsor-text {
+	color: black;
 }
+.volunteer-text {
+	color: black;
+}
+.involve-btn {
+	border: none;
+	border-radius: 25px;
+	background: #3E505B;
+	padding: 20px;
+	color: white;
+	font-size: 25x;
+}
+/* --- Jumbotron Four --- */
 h5 {
 	font-size: 30px;
 	margin-bottom: 10px;
@@ -219,8 +190,37 @@ h5 {
 	margin: 0 auto;
 	width: 100%;
 	height: auto;
+	justify-content: space-between;
+	text-align: center;
+	background: #8AB0AB;
+	padding-top: 3%;
 }
 
 .footerContainer {
-	float: left;
+	width: 100%;
+	display: inline-grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	color: white;
+}
+.footerItem {
+	padding: 0;
+	font-size: 1rem;
+}
+.nestedList {
+	padding: 0;
+	margin: 20px 0;
+	list-style: none;
+	display: block;
+}
+ol {
+	padding: 0;
+}
+/* -- Social Icon Animations -- */
+.footerZoom {
+	transform: rotate(180deg) scale(1.5);
+	transition: 0.5s;
+}
+.footerReturn {
+	transform: rotate(0deg) scale(1);
+	transition: 0.5s;
 }
