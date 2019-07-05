@@ -14,6 +14,7 @@ body {
 a {
 	text-decoration: none;
 	color: white;
+	transition: 0.5s;
 }
 /* --- COLOR PALETTE --- */
 /*
@@ -48,6 +49,12 @@ li {
 	font-family: 'Great Vibes', cursive;
 	padding-right: 40px;
 	border-right: 1px solid white;
+	transition: 0.8s;
+}
+a:hover {
+	font-style: italic;
+	transition: 0.5s;
+	color: #1A1D1A;
 }
 .brandHover {
 	opacity: 0.85;
@@ -82,17 +89,19 @@ h1 {
 	margin-bottom: 0;
 }
 h3 {
-	color: black;
+	color: white;
 	font-weight: lighter;
 	font-size: 2rem;
+}
+button {
+	transition: 0.4s;
 }
 button:hover {
 	background-color: #8AB0AB;
 	transform: rotate(360deg) scale(1.2);
 	/*transform: rotate(360deg) scale(1);*/
 	transition: 0.4s;
-	color: black;
-	box-shadow: 4px 8px #3E505B;
+	color: white;
 }
 /* --- Jumbotron One --- */
 .jumbOne {
@@ -138,16 +147,17 @@ span {
 }
 /* --- Jumbotron Three --- */
 .jumbThree {
-	background: none;
+	background: url(https://images.unsplash.com/photo-1547082697-666e7ae5051e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	margin-left: 0;
 	margin-right: 0;
-	padding-top: 50px;
+	padding: 150px 50px;
 	width: 100%;
 	height: auto;
 	min-height: 500px;
+	color: white;
 }
 .containerTwo {
 	display: grid;
@@ -164,25 +174,28 @@ span {
 	padding-top: 75px;
 	padding-bottom: 75px;
 }
-.sponsor-text {
-	color: black;
-}
-.volunteer-text {
-	color: black;
-}
 .involve-btn {
 	border: none;
 	border-radius: 25px;
-	background: #3E505B;
+	background: #1A1D1A;
 	padding: 20px;
+	margin: 5px;
 	color: white;
 	font-size: 25x;
 }
 /* --- Jumbotron Four --- */
+.jumbFour {
+	background: white;
+	width: 100%;
+	height: auto;
+	min-height: 500px;
+}
 h5 {
-	font-size: 30px;
+	font-size: 2rem;
 	margin-bottom: 10px;
-	color: #8AB0AB;
+	color: black;
+}
+.lastContainer {
 }
 
 /* -- Footer -- */
@@ -201,6 +214,8 @@ h5 {
 	display: inline-grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	color: white;
+	margin: 0;
+	padding: 0;
 }
 .footerItem {
 	padding: 0;
