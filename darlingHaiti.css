@@ -266,6 +266,14 @@ h5 {
 }
 .lastItem {
 	padding: 50px 0;
+	transition: 0.5s;
+}
+.lastItemHover {
+	transition: 0.5s;
+}
+.lastItemHover:hover {
+	transform: scale(1.05);
+	transition: 0.5s;
 }
 
 /* -- Footer -- */
