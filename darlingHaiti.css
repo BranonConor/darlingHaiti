@@ -64,7 +64,8 @@ li {
 	transition: 0.5s;
 }
 .homeLink:hover {
-	font-size: 2.10rem;
+	font-size: 2.00rem;
+	color: black;
 }
 a:hover {
 	font-size: 1.15rem;
