@@ -246,10 +246,11 @@ i:hover {
 	border: none;
 	border-radius: 25px;
 	background: #1A1D1A;
-	padding: 20px;
+	padding: 15px;
 	margin: 5px;
 	color: white;
 	font-size: 25x;
+	width: 30%;
 }
 /* --- Jumbotron Four --- */
 .jumbFour {
@@ -301,6 +302,7 @@ input {
 	padding: 15px;
 	outline: none;
 	border: none;
+	width: 25%;
 }
 
 /* -- Footer -- */
@@ -311,7 +313,7 @@ input {
 	justify-content: space-between;
 	text-align: center;
 	background: #8AB0AB;
-	padding-top: 3%;
+	padding-top: 2%;
 }
 
 .footerContainer {
