@@ -250,7 +250,7 @@ i:hover {
 	max-width: 100%;
 	height: auto;
 	min-height: 500px;
-	padding: 100px 0;
+	padding: 125px 0;
 }
 h5 {
 	font-size: 1.5rem;
@@ -274,6 +274,25 @@ h5 {
 .lastItemHover:hover {
 	transform: scale(1.05);
 	transition: 0.5s;
+}
+/* -- Jumbotron 5 -- */
+.jumbFive {
+	background: #3E505B;
+	color: white;
+	max-width: 100%;
+	height: auto;
+	min-height: 500px;
+	padding: 100px 0;
+}
+.form {
+	text-align: center;
+}
+input {
+	margin: auto;
+	display: block;
+	padding: 15px;
+	outline: none;
+	border: none;
 }
 
 /* -- Footer -- */
