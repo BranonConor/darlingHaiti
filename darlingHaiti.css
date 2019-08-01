@@ -235,12 +235,10 @@ i:hover {
 .getInvolved {
 	background: none;
 	width: 50%;
-	height: auto;
+	height: 400px;
 	text-align: center;
 	border-radius: 30px;
 	margin: auto;
-	padding-top: 75px;
-	padding-bottom: 75px;
 }
 .involve-btn {
 	border: none;
@@ -250,7 +248,7 @@ i:hover {
 	margin: 5px;
 	color: white;
 	font-size: 25x;
-	width: 30%;
+	width: 100px;
 }
 /* --- Jumbotron Four --- */
 .jumbFour {
