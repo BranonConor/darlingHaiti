@@ -177,7 +177,7 @@ button:hover {
 /* --- Jumbotron Two --- */
 .jumbTwo {
 	background: #3E505B;
-	padding-top: 50px;
+	padding-top: 75px;
 	width: 100%;
 	height: auto;
 }
@@ -195,7 +195,7 @@ span {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
-	grid-gap: 20px;
+	grid-gap: 0px;
 	margin-top: 100px;
 }
 .item {
