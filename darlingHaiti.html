@@ -7,152 +7,124 @@
 	<link rel="preload" href="https://fonts.googleapis.com/css?family=Great+Vibes|Roboto+Condensed&display=swap" as="font">
 	<link href="https://fonts.googleapis.com/css?family=Great+Vibes|Roboto+Condensed&display=swap" rel="stylesheet">
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="darlingHaiti.css">
+	<link rel="stylesheet" type="text/css" href="darlingHaiti2.css">
 </head>
 <body>
 <!-- NAVBAR -->
 	<div id="home" class="navbar">
 		<ul class="nav">
-			<li class="brand"><a class="homeLink" href="#home">Darling Haiti</a></li>
-			<li><a href="#about">About</a></li>
-			<li><a href="#involve">Get Involved</a></li>
-			<li><a href="#haiti">Why Us?</a></li>
-			<li><a href="#contact">Contact</a></li>
-			<div class="navSocial">
+            <div class="navLeft">
+                <li class="brand"><a class="homeLink" href="#home">Darling Haiti</a></li>
+            </div>
+            <div class="navCenter">
+                <li><a href="#about">About</a></li>
+                <li><a href="#involve">Get Involved</a></li>
+                <li><a href="#haiti">Why Us?</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </div>
+			<div class="navRight">
 				<li><a href="#"><i class="fab fa-instagram fa-2x footerIcon"></i></a></li>
 				<li><a href="#"><i class="fab fa-facebook-square fa-2x footerIcon"></i></a></li>
 				<li><a href="#"><i class="fab fa-linkedin fa-2x footerIcon"></i></a></li>
 			</div>
 		</ul>
-	</div>
-<!-- JUMBOTRON CONTENT-->
-	<!-- JUMBOTRON 1 -->	
-	<div class="jumbotron jumbOne">
-		<h1>Darling Haiti</h1>
-		<hr>
-		<h3>Medical Services</h3>
-		<p><i class="fas fa-medkit fa-4x"></i></p>
-		<p></p>
-	</div>
-	<!-- JUMBOTRON 2 -->
-	<div id="about" class="jumbotron jumbTwo">
-		<h2>Welcome.</h2>
-		<hr>
-		<h5><span>Darling Haiti </span> Medical Services is a humble volunteer organization providing medical services for Haitians in need.</h5>
-		<h5>Here are some of the ways we accomplish this mission:</h5>
-		<div class="container">
-			<div class="item" data-aos="fade-right">
-				<i class="fas fa-syringe fa-5x"></i>
-				<h5>Diabetic Care</h5>
-			</div>
-			<div class="item" data-aos="zoom-in">
-				<i class="fas fa-pills fa-5x"></i>
-				<h5>Medication Management</h5>
-			</div>
-			<div class="item" data-aos="fade-left">
-				<i class="fas fa-baby fa-5x"></i>
-				<h5>OB-GYN Services</h5>
-			</div>
-			<div class="item" data-aos="fade-right">
-				<i class="fas fa-user-injured fa-5x"></i>
-				<h5>Injury Intervention</h5>
-			</div>
-			<div class="item" data-aos="zoom-in">
-				<i class="fas fa-band-aid fa-5x"></i>
-				<h5>Routine Wound Care</h5>
-			</div>
-			<div class="item" data-aos="fade-left">
-				<i class="fas fa-glasses fa-5x"></i>
-				<h5>Visual Correction</h5>
-			</div>
+    </div>
+<!-- SITE CONTENT / STRIPS-->
+	<!-- JUMBOTRON HERO -->	
+	<div class="hero">
+        <h1>Darling Haiti</h1>
+        <h3>Medical Services</h3>
+        <p><i class="fas fa-medkit fa-4x"></i></p>
+    </div>
+    <!-- WELCOME STRIP -->
+    <div id="about" class="welcome">
+            <h2>Welcome.</h2>
+            <hr>
+            <p><span>Darling Haiti </span> Medical Services is a humble volunteer organization providing medical services for Haitians in need.</p>
+            <p>Here are some of the ways we accomplish this mission:</p>
+            <div class="container">
+                <div class="item" data-aos="zoom-out-down" data-aos-duration="800">
+                    <i class="fas fa-syringe fa-5x"></i>
+                    <h5>Diabetic Care</h5>
+                </div>
+                <div class="item" data-aos="zoom-out-down" data-aos-duration="800">
+                    <i class="fas fa-pills fa-5x"></i>
+                    <h5>Medication Management</h5>
+                </div>
+                <div class="item" data-aos="zoom-out-down" data-aos-duration="1400">
+                    <i class="fas fa-baby fa-5x"></i>
+                    <h5>OB-GYN Services</h5>
+                </div>
+                <div class="item" data-aos="zoom-out-down" data-aos-duration="1800">
+                    <i class="fas fa-user-injured fa-5x"></i>
+                    <h5>Injury Intervention</h5>
+                </div>
+                <div class="item" data-aos="zoom-out-down" data-aos-duration="2200">
+                    <i class="fas fa-band-aid fa-5x"></i>
+                    <h5>Routine Wound Care</h5>
+                </div>
+                <div class="item" data-aos="zoom-out-down" data-aos-duration="2600">
+                    <i class="fas fa-glasses fa-5x"></i>
+                    <h5>Visual Correction</h5>
+                </div>
+            </div>
+        </div>
+    <!-- INVOLVEMENT STRIP -->
+	<div id="involve" class="involvement">
+		<div data-aos="fade-right" data-aos-duration="1800">
+			<h2>Become a Sponsor!</h2>
+			<hr>
+			<p>Lend your hand in changing lives from afar by contributing to resources for our teams / trips.</p>
+			<button>LEARN MORE</button>
 		</div>
-	</div>
-	<!-- JUMBOTRON 3 -->
-	<div id="involve" class="jumbotron jumbThree">
-		<div class="containerTwo">
-			<div class="getInvolved" data-aos="fade-right">
-				<h2>Become a Sponsor!</h2>
-				<hr>
-				<p class="sponsor-text">Lend your hand in changing lives from afar by contributing to resources for our teams / trips.</p>
-				<button class="involve-btn">LEARN MORE</button>
-			</div>
-			<div class="getInvolved" data-aos="fade-left">
-				<h2>Become a Volunteer!</h2>
-				<hr>
-				<p class="volunteer-text">Be a part of our volunteer team and come see Haiti for yourself!</p>
-				<button class="involve-btn">LEARN MORE</button>
-			</div>
-		</div>		
-	</div>
-	<!-- JUMBOTRON 4 -->
-	<div id="haiti" class="jumbotron jumbFour">
+		<div data-aos="fade-left" data-aos-duration="1800">
+			<h2>Become a Volunteer!</h2>
+			<hr>
+			<p>Be a part of our volunteer team and come see Haiti for yourself!</p>
+			<button>LEARN MORE</button>
+		</div>	
+    </div>
+    <!-- WHY US? -->
+    <div id="haiti" class="whyUs">
 		<h2>Why Us?</h2>
 		<hr>
-		<div class="lastContainer">
-			<div class="lastItem" data-aos="fade-right">
-				<div class="lastItemHover">
-					<i class="far fa-heart fa-2x"></i>
-					<h5>We're passionate.</h5>
-					<p>Each and every member of our team commits their time to volunteering out of sheer passion. As folks with day jobs, families, and many other commitments, we choose year after year to lend a helping hand because we love Haiti and its beautiful people.</p>
-				</div>
+		<div class="container2">
+			<div class="item2" data-aos="fade-right" data-aos-duration="700">
+				<i class="far fa-heart fa-2x"></i>
+				<h3>We're passionate.</h3>
+				<p>Each and every member of our team commits their time to volunteering out of sheer passion. As folks with day jobs, families, and many other commitments, we choose year after year to lend a helping hand because we love Haiti and its beautiful people.</p>
 			</div>
-			<div class="lastItem" data-aos="zoom-in">
-				<div class="lastItemHover">
-					<i class="fas fa-tasks fa-2x"></i>
-					<h5>We're experienced.</h5>
-					<p>Dr. Anderson, as well as many team members, have returned to volunteer in Haiti over 20 times. As experienced healthcare professionals and as frequent visitors to Haiti, our experience with addressing the needs in this region is strong.</p>
-				</div>
+			<div class="item2" data-aos="zoom-in" data-aos-duration="700">
+				<i class="fas fa-tasks fa-2x"></i>
+				<h3>We're experienced.</h3>
+				<p>Dr. Anderson, as well as many team members, have returned to volunteer in Haiti over 20 times. As experienced healthcare professionals and as frequent visitors to Haiti, our experience with addressing the needs in this region is strong.</p>
 			</div>
-			<div class="lastItem" data-aos="fade-left">
-				<div class="lastItemHover">
-					<i class="fas fa-users fa-2x"></i>
-					<h5>We're connected.</h5>
-					<p>Through the many trips already under our belt, we've developed close relationships with many locals who work hard to catalyze our efforts. These trips would not be possible without the counsel and aid provided by our local Haitian partners.</p>
-				</div>
+			<div class="item2" data-aos="fade-left" data-aos-duration="700">
+				<i class="fas fa-users fa-2x"></i>
+				<h3>We're connected.</h3>
+				<p>Through the many trips already under our belt, we've developed close relationships with many locals who work hard to catalyze our efforts. These trips would not be possible without the counsel and aid provided by our local Haitian partners.</p>
 			</div>
-		</div>
-	</div>
-	<!-- Jumbotron 5 -->
-	<div id="contact" class="jumbotron jumbFive">
-		<h2>Contact</h2>
-		<hr>
-		<div class="lastItem" data-aos="zoom-in">
-			<div class="lastItemHover form">
-				<h5>We're excited to hear from you!</h5>
-				<input id="email" type="email" placeholder="Your Email"></input>
-				<input id="message" type="text" placeholder="Leave us a message!"></input>
-				<button id="submit" type="submit" value="submit">Submit</button>
-			</div>
-		</div>
-	</div>
-<!-- FOOTER -->
-	<div class="footer">
-		<ul class="footerContainer">
-			<li class="footerItem">Resources
-				<ol>
-					<li class="nestedList">About Haiti</li>
-					<li class="nestedList">Our Work</li>
-					<li class="nestedList">Our Team</li>
-				</ol>
-			</li>
-			<li class="footerItem">Social
-				<ol>
-					<li class="nestedList"><a href="#"><i class="fab fa-instagram fa-2x footerIcon"></i></a></li>
-					<li class="nestedList"><a href="#"><i class="fab fa-facebook-square fa-2x footerIcon"></i></a></li>
-					<li class="nestedList"><a href="#"><i class="fab fa-linkedin fa-2x footerIcon"></i></a></li>
-				</ol>
-			</li>
-			<li class="footerItem">Copyright
-				<ol>
-					<li class="nestedList">© Darling Haiti 2019, All Rights Reserved</li>
-					<li class="nestedList">Website by Branon Eusebio</li>
-				</ol>
-			</li>
-		</ul>
-	</div>	
+		</div> 
+    </div>
+    <!-- FOOTER -->
+    <div class='footer'>
+        <div class='copyright'>
+            <p>Copyright: Darling Haiti, 2019</p>
+            <p>Website by Branon Eusebio</p>
+        </div>
+        <div class='social'>
+            <p><a href="#"><i class="fab fa-instagram fa-2x footerIcon"></i></a></p>
+			<p><a href="#"><i class="fab fa-facebook-square fa-2x footerIcon"></i></a></p>
+			<p><a href="#"><i class="fab fa-linkedin fa-2x footerIcon"></i></a></p>
+        </div>
+        <div class='resources'>
+            <p>About Haiti</p>
+            <p>Our Team</p>
+            <p>Contact</p>
+        </div>
+    </div>
 <!-- Javascript Plug Ins -->
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-	<script src="https://kit.fontawesome.com/8e3de40b11.js"></script>
-	<script src="darlingHaiti.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/8e3de40b11.js"></script>
+    <script src="darlingHaiti.js"></script>    
 </body>
-</html>
